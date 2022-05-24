@@ -1,0 +1,55 @@
+<div class="center">
+    <div id="card-list">
+        <label for="show" class="show-btn" onclick="openCardTab()">Kart Ekle</label>
+    </div>
+    <div id="card-create-wrap">
+        <div class="container">
+            <label onclick="closeCardTab()" for="show" class="close-btn fas fa-times" title="close"></label>
+            <div class="text">
+                Ödeme Yöntemi
+            </div>
+            <form id="cardaddform">
+                <div class="data">
+                    <label>Kart İsmi</label>
+                    <input name="name" type="text" placeholder="Kişisel Kartım">
+                </div>
+                <div class="data">
+                    <label>Ad Soyad</label>
+                    <input name="owner" type="text" placeholder="Ali Atma">
+                </div>
+                <div class="data">
+                    <label>Kart Numarası</label>
+                    <input name="number" type="text" placeholder="1234 4321 **** ****">
+                </div>
+                <div class="data">
+                    <label>CVV</label>
+                    <input name="cvv" type="text" placeholder="123">
+                </div>
+                <div class="data">
+                    <label>SKT</label>
+                    <input name="expiredate" type="text" placeholder="05/27">
+                </div>
+                <div class="btn">
+                    <div class="inner"></div>
+                    <button type="submit" onclick="addCard(event)">Ekle</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+    <!-- PRICE ITEM -->
+    <div class="panel price panel-grey">
+        <div class="panel-heading arrow_box text-center">
+            <h3>EKLEMEK İSTEDİĞİNİZ TUTAR</h3>
+        </div>
+        <div id="added-amount" class="panel-body text-center"></div>
+        <ul class="list-group list-group-flush text-center">
+            <input id="add-balance" type="text">
+        </ul>
+        <div class="panel-footer" id="add-vehicle-button" onclick="addBalance()" >
+            <a class="btn btn-lg btn-block btn-primary" href="#">ÖDE</a>
+        </div>
+    </div>
+    <!-- /PRICE ITEM -->
+</div>

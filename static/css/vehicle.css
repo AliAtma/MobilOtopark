@@ -1,0 +1,131 @@
+.vehicle-window {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	background-color: #25223f;
+	width: 35%;
+	height: 70%;
+	border-radius: 5px;
+	color: white;
+}
+
+#added-vehicles {
+	justify-content: flex-start !important;
+}
+
+#added-vehicles-header {
+	height: 10%;
+	width: 100%;
+	text-indent: 30px;
+	font-size: 23px;
+	display: flex;
+	align-items: center;
+}
+
+#vehicle-list {
+	width: 98%;
+	height: 89%;
+	top: 8%;
+	overflow-y: scroll;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+}
+
+#vehicle-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+#vehicle-list::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+#vehicle-list::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgb(200, 220, 230);
+}
+
+#vehicle-list::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(210, 230, 240);
+}
+
+.vehicle-entry {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 90%;
+}
+
+.vehicle-entry-delete, .vehicle-entry-select {
+	text-align: center;
+	width: 80px;
+	padding: 2px;
+	background-color: red;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.vehicle-entry-select {
+    background-color: green;
+}
+
+.vehicle-entry-select:hover {
+	background-color: rgb(151, 0, 0);
+  }
+  
+.vehicle-entry-select{
+	background-color: green;
+  }
+  
+.vehicle-entry-select:hover{
+	background-color: rgb(4, 189, 4);
+  }
+  
+.vehicle-entry-select{
+	border: solid 1px green;
+  }
+
+.vehicle-entry-delete:hover {
+	background-color: rgb(201, 0, 0);
+}
+
+.vehicle-entry.selected{
+	border: solid 1px green;
+  }
+
+#new-vehicle {
+	width: 25%;
+	height: 40%;
+	font-size: 21px;
+}
+
+#new-vehicle input {
+	outline: none;
+	font-size: 17px;
+	border-radius: 5px;
+	padding: 2px;
+}
+
+#add-vehicle-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: green;
+	gap: 5px;
+	border-radius: 5px;
+	padding: 5px 10px;
+	color: white;
+	font-size: 17px;
+	cursor: pointer;
+}
+
+#add-vehicle-button:hover {
+	background-color: rgb(0, 148, 0);
+}
+
+#add-vehicle-button img {
+	width: 27px;
+}
